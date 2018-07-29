@@ -6,7 +6,7 @@
   <body>
   <script type="text/javascript">
     var response1 = prompt ('Did Elizabeth grow up in Iowa: Y or N').toUpperCase();
-    console.log("user responded to question", response1);
+    console.log("user responded to question 1", response1);
     if ((response1 == "N") || (response1 == "NO")) {
       console.log("user responded with N or NO");
       message = "Great job!";
@@ -17,7 +17,7 @@
     alert(message);
     console.log("Message (after check) = ", message);
     var response2 = prompt ('Does Elizabeth ride mountain bikes: Y or N').toUpperCase();
-    console.log("user responded to question", response2);
+    console.log("user responded to question 2", response2);
     if (response2 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
@@ -28,7 +28,7 @@
     alert(message);
     console.log("Message (after check) = ", message);
     var response3 = prompt ('Does Elizabeth have more than one bicycle?: Y or N').toUpperCase();
-    console.log("user responded to question", response3);
+    console.log("user responded to question 3", response3);
     if (response3 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
@@ -38,7 +38,26 @@
     }
     alert(message);
     console.log("Message (after check) = ", message);
+
+    var response4 = prompt('How many bicycles does Elizabeth own? Submit a number:');
+    var response4Number = parseInt(response4);
+    console.log("user responded to question 4", response4Number);
+    console.log("user responded to question 4", response4);
+    if (response4Number < 6) {
+      console.log("user responded with number less than 6" + response4Number);
+      message = "too low";
+    } else if (response4Number > 6){
+      console.log("user responded with number greater than 6" + response4Number);
+      message = "too high";
+    } else if (response4Number == 6) {
+      console.log("user responded with 6")
+      message = "Just Right!";
+    }
+    alert(message);
+    
   </script>
+
+
     <h1>Self sufficiency on two wheels</h1>
       <p>I grew up in a Big 10 college town in Central Illinois; flat, beautiful grids as far as the bike could ride.</p>
       <p>My dad would gear up in spandex and he would ride with me on my 16" bike with training wheels along the shoulder of the country road we lived on. My mom backed over the training wheel on my bike and I refused to ride again until I was 11 years old.</p>
