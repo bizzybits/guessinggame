@@ -5,14 +5,21 @@
 </head>
   <body>
   <script type="text/javascript">
+    var counter = 0;
+    var counterIncorrect = 0;
+
     var response1 = prompt ('Did Elizabeth grow up in Iowa: Y or N').toUpperCase();
     console.log("user responded to question 1", response1);
     if ((response1 == "N") || (response1 == "NO")) {
       console.log("user responded with N or NO");
       message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     } else {
       console.log("user responded with " + response1);
       message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     }
     alert(message);
     console.log("Message (after check) = ", message);
@@ -21,9 +28,13 @@
     if (response2 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     } else {
       console.log("user responded with " + response2);
       message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     }
     alert(message);
     console.log("Message (after check) = ", message);
@@ -32,9 +43,13 @@
     if (response3 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     } else {
       console.log("user responded with " + response3);
       message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     }
     alert(message);
     console.log("Message (after check) = ", message);
@@ -46,15 +61,23 @@
     if (response4Number < 6) {
       console.log("user responded with number less than 6" + response4Number);
       message = "too low";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     } else if (response4Number > 6){
       console.log("user responded with number greater than 6" + response4Number);
       message = "too high";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     } else if (response4Number == 6) {
       console.log("user responded with 6")
       message = "Just Right!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     }
     alert(message);
-    
+
+    alert("Congratulations! You answered " + counter + " questions correctly!")
+
   </script>
 
 
