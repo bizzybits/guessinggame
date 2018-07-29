@@ -1,12 +1,14 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+  <title>EBITTYSCHWINNIE</title>
+</head>
   <body>
   <script type="text/javascript">
-    alert ('Did Elizabeth grow up in Iowa?')
-    var response1 = prompt ('Y or N?');
+    var response1 = prompt ('Did Elizabeth grow up in Iowa: Y or N').toUpperCase();
     console.log("user responded to question", response1);
-    if (response1 == "N") {
-      console.log("user responded with N");
+    if ((response1 == "N") || (response1 == "NO")) {
+      console.log("user responded with N or NO");
       message = "Great job!";
     } else {
       console.log("user responded with " + response1);
@@ -14,34 +16,29 @@
     }
     alert(message);
     console.log("Message (after check) = ", message);
-    alert ('Does Elizabeth ride mountain bikes?')
-    var response1 = prompt ('Y or N?');
-    console.log("user responded to question", response1);
-    if (response1 == "Y") {
+    var response2 = prompt ('Does Elizabeth ride mountain bikes: Y or N').toUpperCase();
+    console.log("user responded to question", response2);
+    if (response2 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
     } else {
-      console.log("user responded with " + response1);
+      console.log("user responded with " + response2);
       message = "Nope!";
     }
     alert(message);
     console.log("Message (after check) = ", message);
-    alert ('Does Elizabeth have more than one bicycle?')
-    var response1 = prompt ('Y or N?');
-    console.log("user responded to question", response1);
-    if (response1 == "Y") {
+    var response3 = prompt ('Does Elizabeth have more than one bicycle?: Y or N').toUpperCase();
+    console.log("user responded to question", response3);
+    if (response3 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
     } else {
-      console.log("user responded with " + response1);
+      console.log("user responded with " + response3);
       message = "Nope!";
     }
     alert(message);
     console.log("Message (after check) = ", message);
   </script>
-  <head>
-    <title>EBITTYSCHWINNIE</title>
-  </head>
     <h1>Self sufficiency on two wheels</h1>
       <p>I grew up in a Big 10 college town in Central Illinois; flat, beautiful grids as far as the bike could ride.</p>
       <p>My dad would gear up in spandex and he would ride with me on my 16" bike with training wheels along the shoulder of the country road we lived on. My mom backed over the training wheel on my bike and I refused to ride again until I was 11 years old.</p>
