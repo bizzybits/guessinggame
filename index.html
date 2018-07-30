@@ -58,25 +58,30 @@
     var response4Number = parseInt(response4);
     console.log("user responded to question 4", response4Number);
     console.log("user responded to question 4", response4);
+    while (isNaN(response4Number)) {
+       message = "Please enter a number."
+       alert(message);
+       response4Number = prompt("Please guess again:");
+     }
     if (response4Number < 6) {
       console.log("user responded with number less than 6" + response4Number);
       message = "too low";
       counterIncorrect++;
+      alert(message);
       console.log("current number of incorrect answers " + counterIncorrect);
     } else if (response4Number > 6){
       console.log("user responded with number greater than 6" + response4Number);
       message = "too high";
       counterIncorrect++;
+      alert(message);
       console.log("current number of incorrect answers " + counterIncorrect);
     } else if (response4Number == 6) {
       console.log("user responded with 6 ");
       message = "Just Right!";
       counter++;
-      console.log("current number of correct answers " + counter);
-    } else {
-      message = "Nice try --> not a valid number.";
-    }
       alert(message);
+      console.log("current number of correct answers " + counter);
+    }
   var response5 = prompt('How old is Elizabeth? Submit a number: ');
   console.log("user guessed age");
     while (isNaN(response5)) {
