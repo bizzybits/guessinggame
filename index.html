@@ -73,29 +73,33 @@
       message = "Just Right!";
       counter++;
       console.log("current number of correct answers " + counter);
+    } else {
+      message = "Nice try --> not a valid number.";
     }
+      alert(message);
   var response5 = prompt('How old is Elizabeth? Submit a number: ');
+  console.log("user guessed age");
+    while (isNaN(response5)) {
+      message = "Please enter a number."
+      alert(message);
+      response5 = prompt("Please guess again:");
+    }
     var response5Number = parseInt(response5);
     console.log("user guessed Elizabeth is " + response5Number + " years old");
-    if (response5Number == 34) {
-      console.log("user guessed Elizabeth is " + response5Number + "years old");
+    while ((response5Number < 34) || (response5Number >34)) {
+        message = "Age ain't nothin' but a number";
+        counterIncorrect++;
+        console.log("current number of incorrect answers " + counterIncorrect);
+        alert(message);
+        response5Number = prompt("Please guess again:");
+        console.log(response5Number);
+      }
+      console.log("user guessed Elizabeth is " + response5Number + " years old");
       message = "The world got a little brighter in 1984.";
       counter++;
       console.log("current number of correct answers " + counter);
-    } else if (response5Number < 34) {
-        message = "Age ain't nothin' but a number";
-        counterIncorrect++;
-        console.log("current number of incorrect answers " + counterIncorrect);
-    } else if (response5Number > 34) {
-        message = "Age ain't nothin' but a number";
-        counterIncorrect++;
-        console.log("current number of incorrect answers " + counterIncorrect);
-      }
-    alert(message); 
-
-
-
-    alert("Congratulations! You answered " + counter + "questions correctly!")
+    alert(message)
+    alert("Congratulations! You answered " + counter + " questions correctly!")
 
   </script>
 
