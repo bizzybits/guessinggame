@@ -123,6 +123,8 @@
 
       <p id="great"></p>
 
+      <p id="nope"></p>
+
       <h2>When the rubber really hit the road</h2>
 
       <p>Riding my bike let me leave the neighborhood and I didn't have to pay to ride the bus or ask for a ride. I rode a bike for my main mode of transportation until I was 32. After riding as a commuter for my whole life in Chicago and New York City, I started bike camping when I moved to Oregon in 2013. Who knew biking could be for fun?</p>
@@ -136,15 +138,25 @@
 
       <p>I have been working on riding a bike for fun now, like cyclocross and mountain biking! </p>
 
-      <p> Does Elizabeth race cyclocross?</p>
+      <p> Do you think Elizabeth is going to race cyclocross this season?</p>
 
-      <input type="button" value = 'Yes' onclick="showGreat()"/>
-      <input type="button" value = 'No' onclick="showNope()"/>
+      <input type="button" value = 'Yes' onclick="showNope()"/>
+      <input type="button" value = 'No' onclick="showGreat()"/>
 
       <h3>My stable</h3>
 
-      <p>How many bikes is too many bikes? Almost laughable question! I own five bikes currently and am avoiding buying a car as long as possible.</p>
+      <p>I own six bikes currently and am avoiding buying a car as long as possible.</p>
+      <p>How many bikes is too many bikes?</p>
 
+
+      <br />
+        <input type="radio" name="number of bikes" value="What's a bike?"
+          checked="checked" onclick="snowNope()" />What's a bike?
+        <input type="radio" name="number of bikes" value="Exactly 7."
+          checked="checked" onclick="showNope()" />Exactly 7.
+        <input type="radio" name="number of bikes" value="LOL WUT"
+          checked="checked" onclick="showGreat()" /> LOL WUT
+        </br>
 
 
       <h4>Favorite ride</h4>
@@ -153,13 +165,13 @@
 
 
 
-<div>
+<!---<div>
       <select name="Number of bikes">
           <option value="first">4</option>
           <option value="second" >5</option>
           <option value="third">6</option>
         </select>
-</div>
+</div>-->
 
       </body>
 </html>

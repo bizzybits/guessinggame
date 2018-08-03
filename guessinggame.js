@@ -10,9 +10,9 @@
        }
 
        function showNope() {
-          alert("Nope!");
-        // var wrongContainer = document.getElementById("wrong");
-        // wrongContainer.innerHTML = "Wrong!";
+          //alert("Nope!");
+         var nope = document.getElementById("nope");
+         nope.innerHTML += "Nope!";
        }
       //function showAnswer(answer) {
       //  var container = document.getElementById(answer+"-container");
