@@ -1,57 +1,179 @@
 <!DOCTYPE HTML>
 <html>
+<head>
+  <title>EBITTYSCHWINNIE</title>
+  <link rel="stylesheet" type="text/css" href="syles.css" />
+</head>
   <body>
-  <script type="text/javascript">
-    alert ('Did Elizabeth grow up in Iowa?')
-    var response1 = prompt ('Y or N?');
-    console.log("user responded to question", response1);
-    if (response1 == "N") {
-      console.log("user responded with N");
+<script type="text/javascript" src="guessinggame.js">
+  /*  var counter = 0;
+    var counterIncorrect = 0;
+
+    var response1 = prompt ('Did Elizabeth grow up in Iowa: Y or N').toUpperCase();
+    console.log("user responded to Iowa", response1);
+    if ((response1 == "N") || (response1 == "NO")) {
+      console.log("user responded with N or NO");
       message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     } else {
       console.log("user responded with " + response1);
       message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     }
     alert(message);
     console.log("Message (after check) = ", message);
-    alert ('Does Elizabeth ride mountain bikes?')
-    var response1 = prompt ('Y or N?');
-    console.log("user responded to question", response1);
-    if (response1 == "Y") {
+    var response2 = prompt ('Does Elizabeth ride mountain bikes: Y or N').toUpperCase();
+    console.log("user responded to MTB", response2);
+    if (response2 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     } else {
-      console.log("user responded with " + response1);
+      console.log("user responded with " + response2);
       message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     }
     alert(message);
     console.log("Message (after check) = ", message);
-    alert ('Does Elizabeth have more than one bicycle?')
-    var response1 = prompt ('Y or N?');
-    console.log("user responded to question", response1);
-    if (response1 == "Y") {
+    var response3 = prompt ('Does Elizabeth have more than one bicycle?: Y or N').toUpperCase();
+    console.log("user responded to multi-bikes", response3);
+    if (response3 == "Y") {
       console.log("user responded with Y");
       message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
     } else {
-      console.log("user responded with " + response1);
+      console.log("user responded with " + response3);
       message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
     }
     alert(message);
     console.log("Message (after check) = ", message);
-  </script>
-  <head>
-    <title>EBITTYSCHWINNIE</title>
-  </head>
-    <h1>Self sufficiency on two wheels</h1>
-      <p>I grew up in a Big 10 college town in Central Illinois; flat, beautiful grids as far as the bike could ride.</p>
-      <p>My dad would gear up in spandex and he would ride with me on my 16" bike with training wheels along the shoulder of the country road we lived on. My mom backed over the training wheel on my bike and I refused to ride again until I was 11 years old.</p>
+
+    var response4 = prompt('How many bicycles does Elizabeth own? Submit a number:');
+    var response4Number = parseInt(response4);
+    console.log("user responded to question 4", response4Number);
+    console.log("user responded to question 4", response4);
+    while (isNaN(response4Number)) {
+       message = "Please enter a number."
+       alert(message);
+       response4Number = prompt("Please guess again:");
+     }
+    if (response4Number < 6) {
+      console.log("user responded with number less than 6" + response4Number);
+      message = "too low";
+      counterIncorrect++;
+      alert(message);
+      console.log("current number of incorrect answers " + counterIncorrect);
+    } else if (response4Number > 6){
+      console.log("user responded with number greater than 6" + response4Number);
+      message = "too high";
+      counterIncorrect++;
+      alert(message);
+      console.log("current number of incorrect answers " + counterIncorrect);
+    } else if (response4Number == 6) {
+      console.log("user responded with 6 ");
+      message = "Just Right!";
+      counter++;
+      alert(message);
+      console.log("current number of correct answers " + counter);
+
+  var response5 = prompt('How old is Elizabeth? Submit a number: ');
+  console.log("user guessed age");
+    while (isNaN(response5)) {
+      message = "Please enter a number."
+      alert(message);
+      response5 = prompt("Please guess again:");
+    }
+    var response5Number = parseInt(response5);
+    console.log("user guessed Elizabeth is " + response5Number + " years old");
+    while ((response5Number < 34) || (response5Number >34)) {
+        message = "Age ain't nothin' but a number";
+        counterIncorrect++;
+        console.log("current number of incorrect answers " + counterIncorrect);
+        alert(message);
+        response5Number = prompt("Please guess again:");
+        console.log(response5Number);
+      }
+      console.log("user guessed Elizabeth is " + response5Number + " years old");
+      message = "The world got a little brighter in 1984.";
+      counter++;
+      console.log("current number of correct answers " + counter);
+    alert(message)
+    alert("Congratulations! You answered " + counter + " questions correctly!")
+  }
+
+  */</script>
+
+<div>
+    <h1>jams by bike</h1>
+</div>
+      <p>Urbana-Champaign is a Big 10 college town in Central Illinois; flat, beautiful grids as far as the bike could ride.</p>
+      <p>My dad would gear up in spandex and he would ride with me on my 16 inch bike with training wheels along the shoulder of our rural route. </p>
+      <p>Did Elizabeth Grow up in Iowa?</p>
+
+      <input type="button" value = 'Yes' onclick="showNope()"/>
+      <input type="button" value = 'No' onclick="showGreat()"/>
+
+      <!--<p id="great"></p> -->
+      <p id="counter"></p>
+
+      <p id="result"></p>
+
       <h2>When the rubber really hit the road</h2>
-      <p>Riding my bike let me leave the neighborhood and I didn't have to pay to ride the bus or ask for a ride. I rode a bike for my main mode of transportation until I was 32. After riding as a commuter for my whole life in Chicago and New York City, I started bike camping when I moved to Oregon in 2013. Who knew biking could be for fun?</p>
-      <h3>And also the dirt!</h3>
-      <p>I have been working on riding a bike for fun now, like cyclocross and mountain biking! </p>
+
+      <p> I was living in New York City teaching bicycle mechanics in schools and I moved to Portland in 2013 to be closer to my sister and her family. </p>
+      <p>Before I worked at Airbnb, I had a working knowledge of Google Suite.</p>
+      <p>Did Elizabeth move to Oregon in 2013?</p>
+
+      <input type="button" value = 'Yes' onclick="showGreat()"/>
+      <input type="button" value = 'No' onclick="showNope()"/>
+
+      <h3>Diego <3 Elizabeth</h3>
+
+      <p>My boyfriend Diego is a CPA and works in the SOX office at PGE. We ride bikes into work together in the morning.
+        He likes to code in Python. </p>
+      <p>Our first date was coding project work and he made four different curries. I was impressed! </p>
+      <p>Are Diego and Elizabeth both vegan?</p>
+
+      <input type="button" value = 'Yes' onclick="showNope()"/>
+      <input type="button" value = 'No' onclick="showGreat()"/>
+
       <h3>My stable</h3>
-      <p>How many bikes is too many bikes? Almost laughable question! I own five bikes currently and am avoiding buying a car as long as possible.</p>
+
+      <p>I own six bikes currently and am avoiding buying a car as long as possible.</p>
+      <p>How many bikes is too many bikes?</p>
+
+
+      <br />
+        <input type="radio" name="number of bikes" value="What's a bike?"
+          checked="checked" onclick="showNope()" /> What's a bike?
+        <input type="radio" name="number of bikes" value="Exactly 7."
+          checked="checked" onclick="showNope()" /> Exactly 7.
+        <input type="radio" name="number of bikes" value="LOL WUT"
+          checked="checked" onclick="showGreat()" /> LOL WUT
+        </br>
+
+
       <h4>Favorite ride</h4>
+
       <p>My current favorite ride is my Surly Ogre, but my heart will always belong to my Schwinn World Sport.</p>
-  </body>
+
+      <img src="IMG_1473.jpg" alt="My family" title="A group of people at a soft-serve froyo place." width="800"/>
+
+
+<!---<div>
+      <select name="Number of bikes">
+          <option value="first">4</option>
+          <option value="second" >5</option>
+          <option value="third">6</option>
+        </select>
+</div>-->
+
+      </body>
 </html>

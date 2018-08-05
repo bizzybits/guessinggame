@@ -1,0 +1,96 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>EBITTYSCHWINNIE</title>
+</head>
+  <body>
+  <script type="text/javascript">
+    var counter = 0;
+    var counterIncorrect = 0;
+
+    var response1 = prompt ('Did Elizabeth grow up in Iowa: Y or N').toUpperCase();
+    console.log("user responded to question 1", response1);
+    if ((response1 == "N") || (response1 == "NO")) {
+      console.log("user responded with N or NO");
+      message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
+    } else {
+      console.log("user responded with " + response1);
+      message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
+    }
+    alert(message);
+    console.log("Message (after check) = ", message);
+    var response2 = prompt ('Does Elizabeth ride mountain bikes: Y or N').toUpperCase();
+    console.log("user responded to question 2", response2);
+    if (response2 == "Y") {
+      console.log("user responded with Y");
+      message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
+    } else {
+      console.log("user responded with " + response2);
+      message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
+    }
+    alert(message);
+    console.log("Message (after check) = ", message);
+    var response3 = prompt ('Does Elizabeth have more than one bicycle?: Y or N').toUpperCase();
+    console.log("user responded to question 3", response3);
+    if (response3 == "Y") {
+      console.log("user responded with Y");
+      message = "Great job!";
+      counter++;
+      console.log("current number of correct answers " + counter);
+    } else {
+      console.log("user responded with " + response3);
+      message = "Nope!";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
+    }
+    alert(message);
+    console.log("Message (after check) = ", message);
+
+    var response4 = prompt('How many bicycles does Elizabeth own? Submit a number:');
+    var response4Number = parseInt(response4);
+    console.log("user responded to question 4", response4Number);
+    console.log("user responded to question 4", response4);
+    if (response4Number < 6) {
+      console.log("user responded with number less than 6 defer" + response4Number);
+      message = "too low";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
+    } else if (response4Number > 6){
+      console.log("user responded with number greater than 6 " + response4Number);
+      message = "too high";
+      counterIncorrect++;
+      console.log("current number of incorrect answers " + counterIncorrect);
+    } else if (response4Number == 6) {
+      console.log("user responded with 6 ")
+      message = "Just Right!";
+      counter++;
+      console.log("current number of correct answers " + counter);
+    }
+    alert(message);
+
+    alert("Congratulations! You answered " + counter + " questions correctly!")
+
+  </script>
+
+
+    <h1>Self sufficiency on two wheels</h1>
+      <p>I grew up in a Big 10 college town in Central Illinois; flat, beautiful grids as far as the bike could ride.</p>
+      <p>My dad would gear up in spandex and he would ride with me on my 16" bike with training wheels along the shoulder of the country road we lived on. My mom backed over the training wheel on my bike and I refused to ride again until I was 11 years old.</p>
+      <h2>When the rubber really hit the road</h2>
+      <p>Riding my bike let me leave the neighborhood and I didn't have to pay to ride the bus or ask for a ride. I rode a bike for my main mode of transportation until I was 32. After riding as a commuter for my whole life in Chicago and New York City, I started bike camping when I moved to Oregon in 2013. Who knew biking could be for fun?</p>
+      <h3>And also the dirt!</h3>
+      <p>I have been working on riding a bike for fun now, like cyclocross and mountain biking! </p>
+      <h3>My stable</h3>
+      <p>How many bikes is too many bikes? Almost laughable question! I own five bikes currently and am avoiding buying a car as long as possible.</p>
+      <h4>Favorite ride</h4>
+      <p>With such a full garage, out of my 6 bicycles, my current favorite ride is my Surly Ogre. BUT, my heart will always belong to my Schwinn World Sport.</p>
+  </body>
+</html>
