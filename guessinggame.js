@@ -8,7 +8,7 @@
          var great = document.getElementById("result");
          console.log(great)
          great.innerHTML = '<span class="large">Great Job!</span>'
-         great.innerHTML += "<img src='trash.png'>";
+         great.innerHTML += "<br><img src='trash.png'>";
          console.log(great)
          var numberCorrect = document.getElementById("counter")
          counter++;
