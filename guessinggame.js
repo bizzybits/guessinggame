@@ -2,11 +2,13 @@
       var counter = 0
 
 
+
       function showGreat() {
           //alert("Great Job!");
          var great = document.getElementById("result");
          console.log(great)
-         great.innerHTML = '<span class="large">Great Job!</span>';
+         great.innerHTML = '<span class="large">Great Job!</span>'
+         great.innerHTML += "<img src='trash.png'>";
          console.log(great)
          var numberCorrect = document.getElementById("counter")
          counter++;
@@ -15,7 +17,7 @@
 
        function showNope() {
           //alert("Nope!");
-         var nope = document.getElementById("result");
+         var nope = document.getElementById("result")
          nope.innerHTML = "Nope!";
        }
       //function showAnswer(answer) {
