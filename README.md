@@ -12,4 +12,4 @@ First commit had three questions that appeared as pop-ups when the user navigate
  
  The HTML portion of this commit included brief, unstyled content that provided answers for the questions.
  
- 
+ This project was created while attending JS BootCamp 1 at Alchemy Code Lab in Portland, OR -- Fall of 2018.
